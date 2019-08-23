@@ -1,0 +1,35 @@
+name: flutter_web_example
+description: A basic example app demonstrating Flutter for Web
+author: Kenneth Reilly <kenneth@innovationgroup.tech>
+version: 1.0.0
+
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+
+dependencies:
+  flutter_web: any
+  flutter_web_ui: any
+
+dev_dependencies:
+  build_runner: ^1.1.2
+  build_web_compilers: ^1.0.0
+  pedantic: ^1.0.0
+
+dependency_overrides:
+  flutter_web:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web
+  flutter_web_ui:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_ui
+
+flutter:
+    assets:
+      - images/image-01.jpg
+      - images/image-02.jpg
+      - images/image-03.jpg
+      - images/image-04.jpg
+      - images/image-05.jpg
+      - images/image-06.jpg
